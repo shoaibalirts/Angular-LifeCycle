@@ -38,11 +38,15 @@ export class LifecycleComponent
 
   ngOnInit() {
     console.log('ngOnInit');
+    console.log('Do component initialization work here or http');
   }
 
   ngOnChanges(changes: SimpleChanges) {
     console.log('ngOnChanges');
     console.log(changes);
+    console.log(
+      'To manage the property whenever there is an update of another property'
+    );
   }
 
   ngDoCheck() {
